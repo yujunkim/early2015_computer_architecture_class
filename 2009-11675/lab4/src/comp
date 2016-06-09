@@ -1,0 +1,16 @@
+129c129
+< Instruction Type:		Unsupported
+---
+> Instruction Type:		irmovl
+132c132
+< Destination Register:	dstE : Invalid
+---
+> Destination Register:	dstE :  0
+134,136c134,136
+< Source Register A:		Invalid
+< Source Register B:		Invalid
+< Constant Value:			Invalid
+---
+> Source Register A:		 8
+> Source Register B:		 0
+> Constant Value:		        16

@@ -1,0 +1,40 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 2 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 2 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Exec : ppc          6
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+On  0, writes          0   (wrE)
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Fetch : from Pc          6 , expanded inst : c00eaaaaaaaa, 
+mtc0 %0, %e
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+Decode : from Pc          6 , expanded inst : c00eaaaaaaaa, 
+mtc0 %0, %e
+Exec : ppc          8
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On 14, writes          0   (wrE)
+
+Cycle          6 ----------------------------------------------------

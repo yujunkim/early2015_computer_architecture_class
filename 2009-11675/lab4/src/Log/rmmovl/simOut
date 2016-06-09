@@ -1,0 +1,188 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 12 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 12 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f103000000, 
+irmovl $00000003,  %1
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f103000000, 
+irmovl $00000003,  %1
+Exec : ppc          6
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+On  1, writes          3   (wrE)
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Fetch : from Pc          6 , expanded inst : 30f2fdffffff, 
+irmovl $fffffffd,  %2
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+Decode : from Pc          6 , expanded inst : 30f2fdffffff, 
+irmovl $fffffffd,  %2
+Exec : ppc         12
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On  2, writes 4294967293   (wrE)
+
+Cycle          6 ----------------------------------------------------
+
+cycle          6
+Fetch : from Pc         12 , expanded inst : 30f400010000, 
+irmovl $00000100,  %4
+
+Cycle          7 ----------------------------------------------------
+
+cycle          7
+Decode : from Pc         12 , expanded inst : 30f400010000, 
+irmovl $00000100,  %4
+Exec : ppc         18
+
+Cycle          8 ----------------------------------------------------
+
+cycle          8
+On  4, writes        256   (wrE)
+
+Cycle          9 ----------------------------------------------------
+
+cycle          9
+Fetch : from Pc         18 , expanded inst : 401400000000, 
+rmmovl %1, 00000000(%4)
+
+Cycle         10 ----------------------------------------------------
+
+cycle         10
+Decode : from Pc         18 , expanded inst : 401400000000, 
+rmmovl %1, 00000000(%4)
+Exec : ppc         24
+
+Cycle         11 ----------------------------------------------------
+
+cycle         11
+Stored          3 into        256
+Stat update
+
+Cycle         12 ----------------------------------------------------
+
+cycle         12
+
+Cycle         13 ----------------------------------------------------
+
+cycle         13
+Fetch : from Pc         24 , expanded inst : 402404000000, 
+rmmovl %2, 00000004(%4)
+
+Cycle         14 ----------------------------------------------------
+
+cycle         14
+Decode : from Pc         24 , expanded inst : 402404000000, 
+rmmovl %2, 00000004(%4)
+Exec : ppc         30
+
+Cycle         15 ----------------------------------------------------
+
+cycle         15
+Stored 4294967293 into        260
+Stat update
+
+Cycle         16 ----------------------------------------------------
+
+cycle         16
+
+Cycle         17 ----------------------------------------------------
+
+cycle         17
+Fetch : from Pc         30 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+
+Cycle         18 ----------------------------------------------------
+
+cycle         18
+Decode : from Pc         30 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Exec : ppc         36
+
+Cycle         19 ----------------------------------------------------
+
+cycle         19
+Loaded          3 from        256
+Stat update
+
+Cycle         20 ----------------------------------------------------
+
+cycle         20
+On  0, writes          3   (wrM)
+
+Cycle         21 ----------------------------------------------------
+
+cycle         21
+Fetch : from Pc         36 , expanded inst : 501404000000, 
+mrmovl 00000004(%4), %1
+
+Cycle         22 ----------------------------------------------------
+
+cycle         22
+Decode : from Pc         36 , expanded inst : 501404000000, 
+mrmovl 00000004(%4), %1
+Exec : ppc         42
+
+Cycle         23 ----------------------------------------------------
+
+cycle         23
+Loaded 4294967293 from        260
+Stat update
+
+Cycle         24 ----------------------------------------------------
+
+cycle         24
+On  1, writes 4294967293   (wrM)
+
+Cycle         25 ----------------------------------------------------
+
+cycle         25
+Fetch : from Pc         42 , expanded inst : 6010c00e0000, 
+addl %1, %0
+
+Cycle         26 ----------------------------------------------------
+
+cycle         26
+Decode : from Pc         42 , expanded inst : 6010c00e0000, 
+addl %1, %0
+Exec : ppc         44
+
+Cycle         27 ----------------------------------------------------
+
+cycle         27
+On  0, writes          0   (wrE)
+
+Cycle         28 ----------------------------------------------------
+
+cycle         28
+Fetch : from Pc         44 , expanded inst : c00e0000aaaa, 
+mtc0 %0, %e
+
+Cycle         29 ----------------------------------------------------
+
+cycle         29
+Decode : from Pc         44 , expanded inst : c00e0000aaaa, 
+mtc0 %0, %e
+Exec : ppc         46
+
+Cycle         30 ----------------------------------------------------
+
+cycle         30
+On 14, writes          0   (wrE)
+
+Cycle         31 ----------------------------------------------------

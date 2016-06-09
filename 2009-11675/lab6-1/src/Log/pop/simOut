@@ -1,0 +1,145 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 6 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 6 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f400010000, 
+irmovl $00000100,  %4
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f400010000, 
+irmovl $00000100,  %4
+Fetch : from Pc          6 , expanded inst : 30f0cdab0000, 
+irmovl $0000abcd,  %0
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+Decode : from Pc          6 , expanded inst : 30f0cdab0000, 
+irmovl $0000abcd,  %0
+Fetch : from Pc         12 , expanded inst : a00fb02f6120, 
+push %0
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Decode : from Pc         12 , expanded inst : a00fb02f6120, 
+push %0
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+On  4, writes        256   (wrE)
+Decode : from Pc         12 , expanded inst : a00fb02f6120, 
+push %0
+Stat update
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On  0, writes      43981   (wrE)
+Decode : from Pc         12 , expanded inst : a00fb02f6120, 
+push %0
+Fetch : from Pc         14 , expanded inst : b02f6120c00e, 
+pop %2
+Stat update
+
+Cycle          6 ----------------------------------------------------
+
+cycle          6
+Decode : from Pc         14 , expanded inst : b02f6120c00e, 
+pop %2
+
+Cycle          7 ----------------------------------------------------
+
+cycle          7
+Stored      43981 into        252
+Decode : from Pc         14 , expanded inst : b02f6120c00e, 
+pop %2
+
+Cycle          8 ----------------------------------------------------
+
+cycle          8
+On  4, writes        252   (wrE)
+Decode : from Pc         14 , expanded inst : b02f6120c00e, 
+pop %2
+Fetch : from Pc         16 , expanded inst : 6120c00e0000, 
+subl %2, %0
+Stat update
+
+Cycle          9 ----------------------------------------------------
+
+cycle          9
+Decode : from Pc         16 , expanded inst : 6120c00e0000, 
+subl %2, %0
+
+Cycle         10 ----------------------------------------------------
+
+cycle         10
+Loaded      43981 from        252
+Decode : from Pc         16 , expanded inst : 6120c00e0000, 
+subl %2, %0
+
+Cycle         11 ----------------------------------------------------
+
+cycle         11
+On  4, writes        256   (wrE)
+On  2, writes      43981   (wrM)
+Decode : from Pc         16 , expanded inst : 6120c00e0000, 
+subl %2, %0
+Fetch : from Pc         18 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+Stat update
+
+Cycle         12 ----------------------------------------------------
+
+cycle         12
+Decode : from Pc         18 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+
+Cycle         13 ----------------------------------------------------
+
+cycle         13
+Decode : from Pc         18 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+
+Cycle         14 ----------------------------------------------------
+
+cycle         14
+On  0, writes          0   (wrE)
+Decode : from Pc         18 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+Fetch : from Pc         20 , expanded inst : 00000000aaaa, 
+halt
+Stat update
+
+Cycle         15 ----------------------------------------------------
+
+cycle         15
+Decode : from Pc         20 , expanded inst : 00000000aaaa, 
+halt
+Fetch : from Pc         21 , expanded inst : 000000aaaaaa, 
+halt
+
+Cycle         16 ----------------------------------------------------
+
+cycle         16
+Decode : from Pc         21 , expanded inst : 000000aaaaaa, 
+halt
+Fetch : from Pc         22 , expanded inst : 0000aaaaaaaa, 
+halt
+
+Cycle         17 ----------------------------------------------------
+
+cycle         17
+On 14, writes          0   (wrE)
+Decode : from Pc         22 , expanded inst : 0000aaaaaaaa, 
+halt
+Fetch : from Pc         23 , expanded inst : 00aaaaaaaaaa, 
+halt
+Stat update
+
+Cycle         18 ----------------------------------------------------

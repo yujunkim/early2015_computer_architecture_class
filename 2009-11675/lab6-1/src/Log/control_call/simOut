@@ -1,0 +1,107 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 5 to 19.
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 22 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 5 to 19.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 22 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f003000000, 
+irmovl $00000003,  %0
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f003000000, 
+irmovl $00000003,  %0
+Fetch : from Pc          6 , expanded inst : 30f303000000, 
+irmovl $00000003,  %3
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+Decode : from Pc          6 , expanded inst : 30f303000000, 
+irmovl $00000003,  %3
+Fetch : from Pc         12 , expanded inst : 8050000000c0, 
+call 00000050
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Decode : from Pc         12 , expanded inst : 8050000000c0, 
+call 00000050
+Fetch : from Pc         17 , expanded inst : c00e00aaaaaa, 
+mtc0 %0, %e
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+On  0, writes          3   (wrE)
+Decode : from Pc         17 , expanded inst : c00e00aaaaaa, 
+mtc0 %0, %e
+Fetch : from Pc         80 , expanded inst : 6130c00e0000, 
+subl %3, %0
+Stat update
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On  3, writes          3   (wrE)
+Stored         17 into 4294967292
+Decode : from Pc         80 , expanded inst : 6130c00e0000, 
+subl %3, %0
+Fetch : from Pc         82 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+Stat update
+
+Cycle          6 ----------------------------------------------------
+
+cycle          6
+On  4, writes 4294967292   (wrE)
+Decode : from Pc         82 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+Stat update
+
+Cycle          7 ----------------------------------------------------
+
+cycle          7
+Decode : from Pc         82 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+
+Cycle          8 ----------------------------------------------------
+
+cycle          8
+On  0, writes          0   (wrE)
+Decode : from Pc         82 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+Fetch : from Pc         84 , expanded inst : 00000000aaaa, 
+halt
+Stat update
+
+Cycle          9 ----------------------------------------------------
+
+cycle          9
+Decode : from Pc         84 , expanded inst : 00000000aaaa, 
+halt
+Fetch : from Pc         85 , expanded inst : 000000aaaaaa, 
+halt
+
+Cycle         10 ----------------------------------------------------
+
+cycle         10
+Decode : from Pc         85 , expanded inst : 000000aaaaaa, 
+halt
+Fetch : from Pc         86 , expanded inst : 0000aaaaaaaa, 
+halt
+
+Cycle         11 ----------------------------------------------------
+
+cycle         11
+On 14, writes          0   (wrE)
+Decode : from Pc         86 , expanded inst : 0000aaaaaaaa, 
+halt
+Fetch : from Pc         87 , expanded inst : 00aaaaaaaaaa, 
+halt
+Stat update
+
+Cycle         12 ----------------------------------------------------

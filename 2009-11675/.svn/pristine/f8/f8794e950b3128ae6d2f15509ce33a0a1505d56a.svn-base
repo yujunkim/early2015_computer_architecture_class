@@ -1,0 +1,13 @@
+package HelloWorld;
+	String hello = "HelloWorld";
+
+	(* synthesize *)
+	module mkHelloWorld(Empty);
+
+		rule say_hello;
+			$display(hello);
+			$finish;
+		endrule
+
+	endmodule
+endpackage

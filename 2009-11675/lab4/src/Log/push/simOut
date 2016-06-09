@@ -1,0 +1,125 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 5 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 5 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f400010000, 
+irmovl $00000100,  %4
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f400010000, 
+irmovl $00000100,  %4
+Exec : ppc          6
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+On  4, writes        256   (wrE)
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Fetch : from Pc          6 , expanded inst : 2040a04fb02f, 
+rrmovl %4, %0
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+Decode : from Pc          6 , expanded inst : 2040a04fb02f, 
+rrmovl %4, %0
+Exec : ppc          8
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On  0, writes        256   (wrE)
+
+Cycle          6 ----------------------------------------------------
+
+cycle          6
+Fetch : from Pc          8 , expanded inst : a04fb02f6120, 
+push %4
+
+Cycle          7 ----------------------------------------------------
+
+cycle          7
+Decode : from Pc          8 , expanded inst : a04fb02f6120, 
+push %4
+Exec : ppc         10
+
+Cycle          8 ----------------------------------------------------
+
+cycle          8
+Stored        256 into        252
+Stat update
+
+Cycle          9 ----------------------------------------------------
+
+cycle          9
+On  4, writes        252   (wrE)
+
+Cycle         10 ----------------------------------------------------
+
+cycle         10
+Fetch : from Pc         10 , expanded inst : b02f6120c00e, 
+pop %2
+
+Cycle         11 ----------------------------------------------------
+
+cycle         11
+Decode : from Pc         10 , expanded inst : b02f6120c00e, 
+pop %2
+Exec : ppc         12
+
+Cycle         12 ----------------------------------------------------
+
+cycle         12
+Loaded        256 from        252
+Stat update
+
+Cycle         13 ----------------------------------------------------
+
+cycle         13
+On  4, writes        256   (wrE)
+On  2, writes        256   (wrM)
+
+Cycle         14 ----------------------------------------------------
+
+cycle         14
+Fetch : from Pc         12 , expanded inst : 6120c00e0000, 
+subl %2, %0
+
+Cycle         15 ----------------------------------------------------
+
+cycle         15
+Decode : from Pc         12 , expanded inst : 6120c00e0000, 
+subl %2, %0
+Exec : ppc         14
+
+Cycle         16 ----------------------------------------------------
+
+cycle         16
+On  0, writes          0   (wrE)
+
+Cycle         17 ----------------------------------------------------
+
+cycle         17
+Fetch : from Pc         14 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+
+Cycle         18 ----------------------------------------------------
+
+cycle         18
+Decode : from Pc         14 , expanded inst : c00e00000000, 
+mtc0 %0, %e
+Exec : ppc         16
+
+Cycle         19 ----------------------------------------------------
+
+cycle         19
+On 14, writes          0   (wrE)
+
+Cycle         20 ----------------------------------------------------

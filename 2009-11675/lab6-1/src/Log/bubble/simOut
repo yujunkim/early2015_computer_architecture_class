@@ -1,0 +1,4639 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 5 to 12.
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 20 to 24.
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 46 to 49.
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 85 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 5 to 12.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 20 to 24.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 46 to 49.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 85 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f300030000, 
+irmovl $00000300,  %3
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f300030000, 
+irmovl $00000300,  %3
+Fetch : from Pc          6 , expanded inst : 30f500030000, 
+irmovl $00000300,  %5
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+Decode : from Pc          6 , expanded inst : 30f500030000, 
+irmovl $00000300,  %5
+Fetch : from Pc         12 , expanded inst : 706400000000, 
+jmp $00000064
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Decode : from Pc         12 , expanded inst : 706400000000, 
+jmp $00000064
+Fetch : from Pc         17 , expanded inst : 000000aaaaaa, 
+halt
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+On  3, writes        768   (wrE)
+Decode : from Pc         17 , expanded inst : 000000aaaaaa, 
+halt
+Fetch : from Pc        100 , expanded inst : 30f006000000, 
+irmovl $00000006,  %0
+Stat update
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On  5, writes        768   (wrE)
+Decode : from Pc        100 , expanded inst : 30f006000000, 
+irmovl $00000006,  %0
+Fetch : from Pc        106 , expanded inst : a00f30f23400, 
+push %0
+Stat update
+
+Cycle          6 ----------------------------------------------------
+
+cycle          6
+Decode : from Pc        106 , expanded inst : a00f30f23400, 
+push %0
+Stat update
+
+Cycle          7 ----------------------------------------------------
+
+cycle          7
+Decode : from Pc        106 , expanded inst : a00f30f23400, 
+push %0
+
+Cycle          8 ----------------------------------------------------
+
+cycle          8
+On  0, writes          6   (wrE)
+Decode : from Pc        106 , expanded inst : a00f30f23400, 
+push %0
+Fetch : from Pc        108 , expanded inst : 30f234000000, 
+irmovl $00000034,  %2
+Stat update
+
+Cycle          9 ----------------------------------------------------
+
+cycle          9
+Decode : from Pc        108 , expanded inst : 30f234000000, 
+irmovl $00000034,  %2
+Fetch : from Pc        114 , expanded inst : a02f80c80000, 
+push %2
+
+Cycle         10 ----------------------------------------------------
+
+cycle         10
+Stored          6 into 4294967292
+Decode : from Pc        114 , expanded inst : a02f80c80000, 
+push %2
+
+Cycle         11 ----------------------------------------------------
+
+cycle         11
+On  4, writes 4294967292   (wrE)
+Decode : from Pc        114 , expanded inst : a02f80c80000, 
+push %2
+Stat update
+
+Cycle         12 ----------------------------------------------------
+
+cycle         12
+On  2, writes         52   (wrE)
+Decode : from Pc        114 , expanded inst : a02f80c80000, 
+push %2
+Fetch : from Pc        116 , expanded inst : 80c800000030, 
+call 000000c8
+Stat update
+
+Cycle         13 ----------------------------------------------------
+
+cycle         13
+Decode : from Pc        116 , expanded inst : 80c800000030, 
+call 000000c8
+
+Cycle         14 ----------------------------------------------------
+
+cycle         14
+Stored         52 into 4294967288
+Decode : from Pc        116 , expanded inst : 80c800000030, 
+call 000000c8
+
+Cycle         15 ----------------------------------------------------
+
+cycle         15
+On  4, writes 4294967288   (wrE)
+Decode : from Pc        116 , expanded inst : 80c800000030, 
+call 000000c8
+Fetch : from Pc        121 , expanded inst : 30f334000000, 
+irmovl $00000034,  %3
+Stat update
+
+Cycle         16 ----------------------------------------------------
+
+cycle         16
+Decode : from Pc        121 , expanded inst : 30f334000000, 
+irmovl $00000034,  %3
+Fetch : from Pc        200 , expanded inst : a05f2045a03f, 
+push %5
+
+Cycle         17 ----------------------------------------------------
+
+cycle         17
+Stored        121 into 4294967284
+Decode : from Pc        200 , expanded inst : a05f2045a03f, 
+push %5
+
+Cycle         18 ----------------------------------------------------
+
+cycle         18
+On  4, writes 4294967284   (wrE)
+Decode : from Pc        200 , expanded inst : a05f2045a03f, 
+push %5
+Fetch : from Pc        202 , expanded inst : 2045a03fa06f, 
+rrmovl %4, %5
+Stat update
+
+Cycle         19 ----------------------------------------------------
+
+cycle         19
+Decode : from Pc        202 , expanded inst : 2045a03fa06f, 
+rrmovl %4, %5
+
+Cycle         20 ----------------------------------------------------
+
+cycle         20
+Stored        768 into 4294967280
+Decode : from Pc        202 , expanded inst : 2045a03fa06f, 
+rrmovl %4, %5
+
+Cycle         21 ----------------------------------------------------
+
+cycle         21
+On  4, writes 4294967280   (wrE)
+Decode : from Pc        202 , expanded inst : 2045a03fa06f, 
+rrmovl %4, %5
+Fetch : from Pc        204 , expanded inst : a03fa06fa07f, 
+push %3
+Stat update
+
+Cycle         22 ----------------------------------------------------
+
+cycle         22
+Decode : from Pc        204 , expanded inst : a03fa06fa07f, 
+push %3
+Fetch : from Pc        206 , expanded inst : a06fa07f5015, 
+push %6
+
+Cycle         23 ----------------------------------------------------
+
+cycle         23
+Decode : from Pc        206 , expanded inst : a06fa07f5015, 
+push %6
+
+Cycle         24 ----------------------------------------------------
+
+cycle         24
+On  5, writes 4294967280   (wrE)
+Stored        768 into 4294967276
+Decode : from Pc        206 , expanded inst : a06fa07f5015, 
+push %6
+Stat update
+
+Cycle         25 ----------------------------------------------------
+
+cycle         25
+On  4, writes 4294967276   (wrE)
+Decode : from Pc        206 , expanded inst : a06fa07f5015, 
+push %6
+Fetch : from Pc        208 , expanded inst : a07f50150800, 
+push %7
+Stat update
+
+Cycle         26 ----------------------------------------------------
+
+cycle         26
+Decode : from Pc        208 , expanded inst : a07f50150800, 
+push %7
+
+Cycle         27 ----------------------------------------------------
+
+cycle         27
+Stored          0 into 4294967272
+Decode : from Pc        208 , expanded inst : a07f50150800, 
+push %7
+
+Cycle         28 ----------------------------------------------------
+
+cycle         28
+On  4, writes 4294967272   (wrE)
+Decode : from Pc        208 , expanded inst : a07f50150800, 
+push %7
+Fetch : from Pc        210 , expanded inst : 501508000000, 
+mrmovl 00000008(%5), %1
+Stat update
+
+Cycle         29 ----------------------------------------------------
+
+cycle         29
+Decode : from Pc        210 , expanded inst : 501508000000, 
+mrmovl 00000008(%5), %1
+Fetch : from Pc        216 , expanded inst : 50050c000000, 
+mrmovl 0000000c(%5), %0
+
+Cycle         30 ----------------------------------------------------
+
+cycle         30
+Stored          0 into 4294967268
+Decode : from Pc        216 , expanded inst : 50050c000000, 
+mrmovl 0000000c(%5), %0
+Fetch : from Pc        222 , expanded inst : 600060006010, 
+addl %0, %0
+
+Cycle         31 ----------------------------------------------------
+
+cycle         31
+On  4, writes 4294967268   (wrE)
+Loaded         52 from 4294967288
+Decode : from Pc        222 , expanded inst : 600060006010, 
+addl %0, %0
+Stat update
+
+Cycle         32 ----------------------------------------------------
+
+cycle         32
+On  1, writes         52   (wrM)
+Loaded          6 from 4294967292
+Decode : from Pc        222 , expanded inst : 600060006010, 
+addl %0, %0
+Stat update
+
+Cycle         33 ----------------------------------------------------
+
+cycle         33
+On  0, writes          6   (wrM)
+Decode : from Pc        222 , expanded inst : 600060006010, 
+addl %0, %0
+Fetch : from Pc        224 , expanded inst : 60006010a00f, 
+addl %0, %0
+Stat update
+
+Cycle         34 ----------------------------------------------------
+
+cycle         34
+Decode : from Pc        224 , expanded inst : 60006010a00f, 
+addl %0, %0
+
+Cycle         35 ----------------------------------------------------
+
+cycle         35
+Decode : from Pc        224 , expanded inst : 60006010a00f, 
+addl %0, %0
+
+Cycle         36 ----------------------------------------------------
+
+cycle         36
+On  0, writes         12   (wrE)
+Decode : from Pc        224 , expanded inst : 60006010a00f, 
+addl %0, %0
+Fetch : from Pc        226 , expanded inst : 6010a00f30f2, 
+addl %1, %0
+Stat update
+
+Cycle         37 ----------------------------------------------------
+
+cycle         37
+Decode : from Pc        226 , expanded inst : 6010a00f30f2, 
+addl %1, %0
+
+Cycle         38 ----------------------------------------------------
+
+cycle         38
+Decode : from Pc        226 , expanded inst : 6010a00f30f2, 
+addl %1, %0
+
+Cycle         39 ----------------------------------------------------
+
+cycle         39
+On  0, writes         24   (wrE)
+Decode : from Pc        226 , expanded inst : 6010a00f30f2, 
+addl %1, %0
+Fetch : from Pc        228 , expanded inst : a00f30f20400, 
+push %0
+Stat update
+
+Cycle         40 ----------------------------------------------------
+
+cycle         40
+Decode : from Pc        228 , expanded inst : a00f30f20400, 
+push %0
+
+Cycle         41 ----------------------------------------------------
+
+cycle         41
+Decode : from Pc        228 , expanded inst : a00f30f20400, 
+push %0
+
+Cycle         42 ----------------------------------------------------
+
+cycle         42
+On  0, writes         76   (wrE)
+Decode : from Pc        228 , expanded inst : a00f30f20400, 
+push %0
+Fetch : from Pc        230 , expanded inst : 30f204000000, 
+irmovl $00000004,  %2
+Stat update
+
+Cycle         43 ----------------------------------------------------
+
+cycle         43
+Decode : from Pc        230 , expanded inst : 30f204000000, 
+irmovl $00000004,  %2
+Fetch : from Pc        236 , expanded inst : 601261207146, 
+addl %1, %2
+
+Cycle         44 ----------------------------------------------------
+
+cycle         44
+Stored         76 into 4294967264
+Decode : from Pc        236 , expanded inst : 601261207146, 
+addl %1, %2
+
+Cycle         45 ----------------------------------------------------
+
+cycle         45
+On  4, writes 4294967264   (wrE)
+Decode : from Pc        236 , expanded inst : 601261207146, 
+addl %1, %2
+Stat update
+
+Cycle         46 ----------------------------------------------------
+
+cycle         46
+On  2, writes          4   (wrE)
+Decode : from Pc        236 , expanded inst : 601261207146, 
+addl %1, %2
+Fetch : from Pc        238 , expanded inst : 612071460100, 
+subl %2, %0
+Stat update
+
+Cycle         47 ----------------------------------------------------
+
+cycle         47
+Decode : from Pc        238 , expanded inst : 612071460100, 
+subl %2, %0
+
+Cycle         48 ----------------------------------------------------
+
+cycle         48
+Decode : from Pc        238 , expanded inst : 612071460100, 
+subl %2, %0
+
+Cycle         49 ----------------------------------------------------
+
+cycle         49
+On  2, writes         56   (wrE)
+Decode : from Pc        238 , expanded inst : 612071460100, 
+subl %2, %0
+Fetch : from Pc        240 , expanded inst : 714601000020, 
+jle $00000146
+Stat update
+
+Cycle         50 ----------------------------------------------------
+
+cycle         50
+Decode : from Pc        240 , expanded inst : 714601000020, 
+jle $00000146
+Fetch : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+
+Cycle         51 ----------------------------------------------------
+
+cycle         51
+Decode : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Fetch : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle         52 ----------------------------------------------------
+
+cycle         52
+On  0, writes         20   (wrE)
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle         53 ----------------------------------------------------
+
+cycle         53
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle         54 ----------------------------------------------------
+
+cycle         54
+On  3, writes         56   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle         55 ----------------------------------------------------
+
+cycle         55
+On  0, writes          4   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle         56 ----------------------------------------------------
+
+cycle         56
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle         57 ----------------------------------------------------
+
+cycle         57
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle         58 ----------------------------------------------------
+
+cycle         58
+On  3, writes         52   (wrE)
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle         59 ----------------------------------------------------
+
+cycle         59
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle         60 ----------------------------------------------------
+
+cycle         60
+Loaded      56797 from         52
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle         61 ----------------------------------------------------
+
+cycle         61
+On  7, writes      56797   (wrM)
+Loaded      61166 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle         62 ----------------------------------------------------
+
+cycle         62
+On  6, writes      61166   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle         63 ----------------------------------------------------
+
+cycle         63
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle         64 ----------------------------------------------------
+
+cycle         64
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle         65 ----------------------------------------------------
+
+cycle         65
+On  0, writes      61166   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle         66 ----------------------------------------------------
+
+cycle         66
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle         67 ----------------------------------------------------
+
+cycle         67
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle         68 ----------------------------------------------------
+
+cycle         68
+On  0, writes       4369   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle         69 ----------------------------------------------------
+
+cycle         69
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle         70 ----------------------------------------------------
+
+cycle         70
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle         71 ----------------------------------------------------
+
+cycle         71
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle         72 ----------------------------------------------------
+
+cycle         72
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle         73 ----------------------------------------------------
+
+cycle         73
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle         74 ----------------------------------------------------
+
+cycle         74
+On  3, writes         48   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle         75 ----------------------------------------------------
+
+cycle         75
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle         76 ----------------------------------------------------
+
+cycle         76
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle         77 ----------------------------------------------------
+
+cycle         77
+On  0, writes         48   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle         78 ----------------------------------------------------
+
+cycle         78
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle         79 ----------------------------------------------------
+
+cycle         79
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle         80 ----------------------------------------------------
+
+cycle         80
+On  0, writes 4294967292   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle         81 ----------------------------------------------------
+
+cycle         81
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle         82 ----------------------------------------------------
+
+cycle         82
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+
+Cycle         83 ----------------------------------------------------
+
+cycle         83
+On  0, writes          4   (wrE)
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Fetch : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Stat update
+
+Cycle         84 ----------------------------------------------------
+
+cycle         84
+Decode : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Fetch : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle         85 ----------------------------------------------------
+
+cycle         85
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle         86 ----------------------------------------------------
+
+cycle         86
+On  2, writes         60   (wrE)
+Loaded         76 from 4294967264
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Stat update
+
+Cycle         87 ----------------------------------------------------
+
+cycle         87
+On  0, writes         76   (wrM)
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Fetch : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Stat update
+
+Cycle         88 ----------------------------------------------------
+
+cycle         88
+Decode : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Fetch : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle         89 ----------------------------------------------------
+
+cycle         89
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle         90 ----------------------------------------------------
+
+cycle         90
+On  0, writes         16   (wrE)
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+Fetch : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Stat update
+
+Cycle         91 ----------------------------------------------------
+
+cycle         91
+Decode : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Fetch : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle         92 ----------------------------------------------------
+
+cycle         92
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle         93 ----------------------------------------------------
+
+cycle         93
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle         94 ----------------------------------------------------
+
+cycle         94
+On  3, writes         60   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle         95 ----------------------------------------------------
+
+cycle         95
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle         96 ----------------------------------------------------
+
+cycle         96
+On  0, writes          4   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle         97 ----------------------------------------------------
+
+cycle         97
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle         98 ----------------------------------------------------
+
+cycle         98
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle         99 ----------------------------------------------------
+
+cycle         99
+On  3, writes         56   (wrE)
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        100 ----------------------------------------------------
+
+cycle        100
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        101 ----------------------------------------------------
+
+cycle        101
+Loaded      61166 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        102 ----------------------------------------------------
+
+cycle        102
+On  7, writes      61166   (wrM)
+Loaded      48059 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        103 ----------------------------------------------------
+
+cycle        103
+On  6, writes      48059   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        104 ----------------------------------------------------
+
+cycle        104
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        105 ----------------------------------------------------
+
+cycle        105
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        106 ----------------------------------------------------
+
+cycle        106
+On  0, writes      48059   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        107 ----------------------------------------------------
+
+cycle        107
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        108 ----------------------------------------------------
+
+cycle        108
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        109 ----------------------------------------------------
+
+cycle        109
+On  0, writes 4294954189   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        110 ----------------------------------------------------
+
+cycle        110
+Stored      48059 into         56
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        111 ----------------------------------------------------
+
+cycle        111
+Stored      61166 into         60
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        112 ----------------------------------------------------
+
+cycle        112
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        113 ----------------------------------------------------
+
+cycle        113
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        114 ----------------------------------------------------
+
+cycle        114
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        115 ----------------------------------------------------
+
+cycle        115
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        116 ----------------------------------------------------
+
+cycle        116
+On  3, writes         52   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        117 ----------------------------------------------------
+
+cycle        117
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        118 ----------------------------------------------------
+
+cycle        118
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        119 ----------------------------------------------------
+
+cycle        119
+On  0, writes         52   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        120 ----------------------------------------------------
+
+cycle        120
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        121 ----------------------------------------------------
+
+cycle        121
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        122 ----------------------------------------------------
+
+cycle        122
+On  0, writes          0   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        123 ----------------------------------------------------
+
+cycle        123
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        124 ----------------------------------------------------
+
+cycle        124
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        125 ----------------------------------------------------
+
+cycle        125
+Loaded      56797 from         52
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        126 ----------------------------------------------------
+
+cycle        126
+On  7, writes      56797   (wrM)
+Loaded      48059 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        127 ----------------------------------------------------
+
+cycle        127
+On  6, writes      48059   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        128 ----------------------------------------------------
+
+cycle        128
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        129 ----------------------------------------------------
+
+cycle        129
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        130 ----------------------------------------------------
+
+cycle        130
+On  0, writes      48059   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        131 ----------------------------------------------------
+
+cycle        131
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        132 ----------------------------------------------------
+
+cycle        132
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        133 ----------------------------------------------------
+
+cycle        133
+On  0, writes 4294958558   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        134 ----------------------------------------------------
+
+cycle        134
+Stored      48059 into         52
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        135 ----------------------------------------------------
+
+cycle        135
+Stored      56797 into         56
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        136 ----------------------------------------------------
+
+cycle        136
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        137 ----------------------------------------------------
+
+cycle        137
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        138 ----------------------------------------------------
+
+cycle        138
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        139 ----------------------------------------------------
+
+cycle        139
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        140 ----------------------------------------------------
+
+cycle        140
+On  3, writes         48   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        141 ----------------------------------------------------
+
+cycle        141
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        142 ----------------------------------------------------
+
+cycle        142
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        143 ----------------------------------------------------
+
+cycle        143
+On  0, writes         48   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        144 ----------------------------------------------------
+
+cycle        144
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        145 ----------------------------------------------------
+
+cycle        145
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        146 ----------------------------------------------------
+
+cycle        146
+On  0, writes 4294967292   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        147 ----------------------------------------------------
+
+cycle        147
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        148 ----------------------------------------------------
+
+cycle        148
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+
+Cycle        149 ----------------------------------------------------
+
+cycle        149
+On  0, writes          4   (wrE)
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Fetch : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Stat update
+
+Cycle        150 ----------------------------------------------------
+
+cycle        150
+Decode : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Fetch : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        151 ----------------------------------------------------
+
+cycle        151
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        152 ----------------------------------------------------
+
+cycle        152
+On  2, writes         64   (wrE)
+Loaded         76 from 4294967264
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Stat update
+
+Cycle        153 ----------------------------------------------------
+
+cycle        153
+On  0, writes         76   (wrM)
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Fetch : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Stat update
+
+Cycle        154 ----------------------------------------------------
+
+cycle        154
+Decode : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Fetch : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        155 ----------------------------------------------------
+
+cycle        155
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        156 ----------------------------------------------------
+
+cycle        156
+On  0, writes         12   (wrE)
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+Fetch : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Stat update
+
+Cycle        157 ----------------------------------------------------
+
+cycle        157
+Decode : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Fetch : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        158 ----------------------------------------------------
+
+cycle        158
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        159 ----------------------------------------------------
+
+cycle        159
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle        160 ----------------------------------------------------
+
+cycle        160
+On  3, writes         64   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle        161 ----------------------------------------------------
+
+cycle        161
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle        162 ----------------------------------------------------
+
+cycle        162
+On  0, writes          4   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        163 ----------------------------------------------------
+
+cycle        163
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle        164 ----------------------------------------------------
+
+cycle        164
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle        165 ----------------------------------------------------
+
+cycle        165
+On  3, writes         60   (wrE)
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        166 ----------------------------------------------------
+
+cycle        166
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        167 ----------------------------------------------------
+
+cycle        167
+Loaded      61166 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        168 ----------------------------------------------------
+
+cycle        168
+On  7, writes      61166   (wrM)
+Loaded      43690 from         64
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        169 ----------------------------------------------------
+
+cycle        169
+On  6, writes      43690   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        170 ----------------------------------------------------
+
+cycle        170
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        171 ----------------------------------------------------
+
+cycle        171
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        172 ----------------------------------------------------
+
+cycle        172
+On  0, writes      43690   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        173 ----------------------------------------------------
+
+cycle        173
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        174 ----------------------------------------------------
+
+cycle        174
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        175 ----------------------------------------------------
+
+cycle        175
+On  0, writes 4294949820   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        176 ----------------------------------------------------
+
+cycle        176
+Stored      43690 into         60
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        177 ----------------------------------------------------
+
+cycle        177
+Stored      61166 into         64
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        178 ----------------------------------------------------
+
+cycle        178
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        179 ----------------------------------------------------
+
+cycle        179
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        180 ----------------------------------------------------
+
+cycle        180
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        181 ----------------------------------------------------
+
+cycle        181
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        182 ----------------------------------------------------
+
+cycle        182
+On  3, writes         56   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        183 ----------------------------------------------------
+
+cycle        183
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        184 ----------------------------------------------------
+
+cycle        184
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        185 ----------------------------------------------------
+
+cycle        185
+On  0, writes         56   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        186 ----------------------------------------------------
+
+cycle        186
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        187 ----------------------------------------------------
+
+cycle        187
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        188 ----------------------------------------------------
+
+cycle        188
+On  0, writes          4   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        189 ----------------------------------------------------
+
+cycle        189
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        190 ----------------------------------------------------
+
+cycle        190
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        191 ----------------------------------------------------
+
+cycle        191
+Loaded      56797 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        192 ----------------------------------------------------
+
+cycle        192
+On  7, writes      56797   (wrM)
+Loaded      43690 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        193 ----------------------------------------------------
+
+cycle        193
+On  6, writes      43690   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        194 ----------------------------------------------------
+
+cycle        194
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        195 ----------------------------------------------------
+
+cycle        195
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        196 ----------------------------------------------------
+
+cycle        196
+On  0, writes      43690   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        197 ----------------------------------------------------
+
+cycle        197
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        198 ----------------------------------------------------
+
+cycle        198
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        199 ----------------------------------------------------
+
+cycle        199
+On  0, writes 4294954189   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        200 ----------------------------------------------------
+
+cycle        200
+Stored      43690 into         56
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        201 ----------------------------------------------------
+
+cycle        201
+Stored      56797 into         60
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        202 ----------------------------------------------------
+
+cycle        202
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        203 ----------------------------------------------------
+
+cycle        203
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        204 ----------------------------------------------------
+
+cycle        204
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        205 ----------------------------------------------------
+
+cycle        205
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        206 ----------------------------------------------------
+
+cycle        206
+On  3, writes         52   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        207 ----------------------------------------------------
+
+cycle        207
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        208 ----------------------------------------------------
+
+cycle        208
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        209 ----------------------------------------------------
+
+cycle        209
+On  0, writes         52   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        210 ----------------------------------------------------
+
+cycle        210
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        211 ----------------------------------------------------
+
+cycle        211
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        212 ----------------------------------------------------
+
+cycle        212
+On  0, writes          0   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        213 ----------------------------------------------------
+
+cycle        213
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        214 ----------------------------------------------------
+
+cycle        214
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        215 ----------------------------------------------------
+
+cycle        215
+Loaded      48059 from         52
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        216 ----------------------------------------------------
+
+cycle        216
+On  7, writes      48059   (wrM)
+Loaded      43690 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        217 ----------------------------------------------------
+
+cycle        217
+On  6, writes      43690   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        218 ----------------------------------------------------
+
+cycle        218
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        219 ----------------------------------------------------
+
+cycle        219
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        220 ----------------------------------------------------
+
+cycle        220
+On  0, writes      43690   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        221 ----------------------------------------------------
+
+cycle        221
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        222 ----------------------------------------------------
+
+cycle        222
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        223 ----------------------------------------------------
+
+cycle        223
+On  0, writes 4294962927   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        224 ----------------------------------------------------
+
+cycle        224
+Stored      43690 into         52
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        225 ----------------------------------------------------
+
+cycle        225
+Stored      48059 into         56
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        226 ----------------------------------------------------
+
+cycle        226
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        227 ----------------------------------------------------
+
+cycle        227
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        228 ----------------------------------------------------
+
+cycle        228
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        229 ----------------------------------------------------
+
+cycle        229
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        230 ----------------------------------------------------
+
+cycle        230
+On  3, writes         48   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        231 ----------------------------------------------------
+
+cycle        231
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        232 ----------------------------------------------------
+
+cycle        232
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        233 ----------------------------------------------------
+
+cycle        233
+On  0, writes         48   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        234 ----------------------------------------------------
+
+cycle        234
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        235 ----------------------------------------------------
+
+cycle        235
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        236 ----------------------------------------------------
+
+cycle        236
+On  0, writes 4294967292   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        237 ----------------------------------------------------
+
+cycle        237
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        238 ----------------------------------------------------
+
+cycle        238
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+
+Cycle        239 ----------------------------------------------------
+
+cycle        239
+On  0, writes          4   (wrE)
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Fetch : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Stat update
+
+Cycle        240 ----------------------------------------------------
+
+cycle        240
+Decode : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Fetch : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        241 ----------------------------------------------------
+
+cycle        241
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        242 ----------------------------------------------------
+
+cycle        242
+On  2, writes         68   (wrE)
+Loaded         76 from 4294967264
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Stat update
+
+Cycle        243 ----------------------------------------------------
+
+cycle        243
+On  0, writes         76   (wrM)
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Fetch : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Stat update
+
+Cycle        244 ----------------------------------------------------
+
+cycle        244
+Decode : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Fetch : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        245 ----------------------------------------------------
+
+cycle        245
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        246 ----------------------------------------------------
+
+cycle        246
+On  0, writes          8   (wrE)
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+Fetch : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Stat update
+
+Cycle        247 ----------------------------------------------------
+
+cycle        247
+Decode : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Fetch : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        248 ----------------------------------------------------
+
+cycle        248
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        249 ----------------------------------------------------
+
+cycle        249
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle        250 ----------------------------------------------------
+
+cycle        250
+On  3, writes         68   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle        251 ----------------------------------------------------
+
+cycle        251
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle        252 ----------------------------------------------------
+
+cycle        252
+On  0, writes          4   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        253 ----------------------------------------------------
+
+cycle        253
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle        254 ----------------------------------------------------
+
+cycle        254
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle        255 ----------------------------------------------------
+
+cycle        255
+On  3, writes         64   (wrE)
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        256 ----------------------------------------------------
+
+cycle        256
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        257 ----------------------------------------------------
+
+cycle        257
+Loaded      61166 from         64
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        258 ----------------------------------------------------
+
+cycle        258
+On  7, writes      61166   (wrM)
+Loaded      65535 from         68
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        259 ----------------------------------------------------
+
+cycle        259
+On  6, writes      65535   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        260 ----------------------------------------------------
+
+cycle        260
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        261 ----------------------------------------------------
+
+cycle        261
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        262 ----------------------------------------------------
+
+cycle        262
+On  0, writes      65535   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        263 ----------------------------------------------------
+
+cycle        263
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        264 ----------------------------------------------------
+
+cycle        264
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        265 ----------------------------------------------------
+
+cycle        265
+On  0, writes       4369   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        266 ----------------------------------------------------
+
+cycle        266
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        267 ----------------------------------------------------
+
+cycle        267
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle        268 ----------------------------------------------------
+
+cycle        268
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        269 ----------------------------------------------------
+
+cycle        269
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        270 ----------------------------------------------------
+
+cycle        270
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        271 ----------------------------------------------------
+
+cycle        271
+On  3, writes         60   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        272 ----------------------------------------------------
+
+cycle        272
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        273 ----------------------------------------------------
+
+cycle        273
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        274 ----------------------------------------------------
+
+cycle        274
+On  0, writes         60   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        275 ----------------------------------------------------
+
+cycle        275
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        276 ----------------------------------------------------
+
+cycle        276
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        277 ----------------------------------------------------
+
+cycle        277
+On  0, writes          8   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        278 ----------------------------------------------------
+
+cycle        278
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        279 ----------------------------------------------------
+
+cycle        279
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        280 ----------------------------------------------------
+
+cycle        280
+Loaded      56797 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        281 ----------------------------------------------------
+
+cycle        281
+On  7, writes      56797   (wrM)
+Loaded      61166 from         64
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        282 ----------------------------------------------------
+
+cycle        282
+On  6, writes      61166   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        283 ----------------------------------------------------
+
+cycle        283
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        284 ----------------------------------------------------
+
+cycle        284
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        285 ----------------------------------------------------
+
+cycle        285
+On  0, writes      61166   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        286 ----------------------------------------------------
+
+cycle        286
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        287 ----------------------------------------------------
+
+cycle        287
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        288 ----------------------------------------------------
+
+cycle        288
+On  0, writes       4369   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        289 ----------------------------------------------------
+
+cycle        289
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        290 ----------------------------------------------------
+
+cycle        290
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle        291 ----------------------------------------------------
+
+cycle        291
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        292 ----------------------------------------------------
+
+cycle        292
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        293 ----------------------------------------------------
+
+cycle        293
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        294 ----------------------------------------------------
+
+cycle        294
+On  3, writes         56   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        295 ----------------------------------------------------
+
+cycle        295
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        296 ----------------------------------------------------
+
+cycle        296
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        297 ----------------------------------------------------
+
+cycle        297
+On  0, writes         56   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        298 ----------------------------------------------------
+
+cycle        298
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        299 ----------------------------------------------------
+
+cycle        299
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        300 ----------------------------------------------------
+
+cycle        300
+On  0, writes          4   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        301 ----------------------------------------------------
+
+cycle        301
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        302 ----------------------------------------------------
+
+cycle        302
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        303 ----------------------------------------------------
+
+cycle        303
+Loaded      48059 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        304 ----------------------------------------------------
+
+cycle        304
+On  7, writes      48059   (wrM)
+Loaded      56797 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        305 ----------------------------------------------------
+
+cycle        305
+On  6, writes      56797   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        306 ----------------------------------------------------
+
+cycle        306
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        307 ----------------------------------------------------
+
+cycle        307
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        308 ----------------------------------------------------
+
+cycle        308
+On  0, writes      56797   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        309 ----------------------------------------------------
+
+cycle        309
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        310 ----------------------------------------------------
+
+cycle        310
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        311 ----------------------------------------------------
+
+cycle        311
+On  0, writes       8738   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        312 ----------------------------------------------------
+
+cycle        312
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        313 ----------------------------------------------------
+
+cycle        313
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle        314 ----------------------------------------------------
+
+cycle        314
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        315 ----------------------------------------------------
+
+cycle        315
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        316 ----------------------------------------------------
+
+cycle        316
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        317 ----------------------------------------------------
+
+cycle        317
+On  3, writes         52   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        318 ----------------------------------------------------
+
+cycle        318
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        319 ----------------------------------------------------
+
+cycle        319
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        320 ----------------------------------------------------
+
+cycle        320
+On  0, writes         52   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        321 ----------------------------------------------------
+
+cycle        321
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        322 ----------------------------------------------------
+
+cycle        322
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        323 ----------------------------------------------------
+
+cycle        323
+On  0, writes          0   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        324 ----------------------------------------------------
+
+cycle        324
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        325 ----------------------------------------------------
+
+cycle        325
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        326 ----------------------------------------------------
+
+cycle        326
+Loaded      43690 from         52
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        327 ----------------------------------------------------
+
+cycle        327
+On  7, writes      43690   (wrM)
+Loaded      48059 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        328 ----------------------------------------------------
+
+cycle        328
+On  6, writes      48059   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        329 ----------------------------------------------------
+
+cycle        329
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        330 ----------------------------------------------------
+
+cycle        330
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        331 ----------------------------------------------------
+
+cycle        331
+On  0, writes      48059   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        332 ----------------------------------------------------
+
+cycle        332
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        333 ----------------------------------------------------
+
+cycle        333
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        334 ----------------------------------------------------
+
+cycle        334
+On  0, writes       4369   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        335 ----------------------------------------------------
+
+cycle        335
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        336 ----------------------------------------------------
+
+cycle        336
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle        337 ----------------------------------------------------
+
+cycle        337
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        338 ----------------------------------------------------
+
+cycle        338
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        339 ----------------------------------------------------
+
+cycle        339
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        340 ----------------------------------------------------
+
+cycle        340
+On  3, writes         48   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        341 ----------------------------------------------------
+
+cycle        341
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        342 ----------------------------------------------------
+
+cycle        342
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        343 ----------------------------------------------------
+
+cycle        343
+On  0, writes         48   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        344 ----------------------------------------------------
+
+cycle        344
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        345 ----------------------------------------------------
+
+cycle        345
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        346 ----------------------------------------------------
+
+cycle        346
+On  0, writes 4294967292   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        347 ----------------------------------------------------
+
+cycle        347
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        348 ----------------------------------------------------
+
+cycle        348
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+
+Cycle        349 ----------------------------------------------------
+
+cycle        349
+On  0, writes          4   (wrE)
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Fetch : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Stat update
+
+Cycle        350 ----------------------------------------------------
+
+cycle        350
+Decode : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Fetch : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        351 ----------------------------------------------------
+
+cycle        351
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        352 ----------------------------------------------------
+
+cycle        352
+On  2, writes         72   (wrE)
+Loaded         76 from 4294967264
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Stat update
+
+Cycle        353 ----------------------------------------------------
+
+cycle        353
+On  0, writes         76   (wrM)
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Fetch : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Stat update
+
+Cycle        354 ----------------------------------------------------
+
+cycle        354
+Decode : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Fetch : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        355 ----------------------------------------------------
+
+cycle        355
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        356 ----------------------------------------------------
+
+cycle        356
+On  0, writes          4   (wrE)
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+Fetch : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Stat update
+
+Cycle        357 ----------------------------------------------------
+
+cycle        357
+Decode : from Pc        245 , expanded inst : 202330f00400, 
+rrmovl %2, %3
+Fetch : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        358 ----------------------------------------------------
+
+cycle        358
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        359 ----------------------------------------------------
+
+cycle        359
+Decode : from Pc        247 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle        360 ----------------------------------------------------
+
+cycle        360
+On  3, writes         72   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Stat update
+
+Cycle        361 ----------------------------------------------------
+
+cycle        361
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+
+Cycle        362 ----------------------------------------------------
+
+cycle        362
+On  0, writes          4   (wrE)
+Decode : from Pc        253 , expanded inst : 610350730000, 
+subl %0, %3
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        363 ----------------------------------------------------
+
+cycle        363
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle        364 ----------------------------------------------------
+
+cycle        364
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+
+Cycle        365 ----------------------------------------------------
+
+cycle        365
+On  3, writes         68   (wrE)
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        366 ----------------------------------------------------
+
+cycle        366
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        367 ----------------------------------------------------
+
+cycle        367
+Loaded      65535 from         68
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        368 ----------------------------------------------------
+
+cycle        368
+On  7, writes      65535   (wrM)
+Loaded      52428 from         72
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        369 ----------------------------------------------------
+
+cycle        369
+On  6, writes      52428   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        370 ----------------------------------------------------
+
+cycle        370
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        371 ----------------------------------------------------
+
+cycle        371
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        372 ----------------------------------------------------
+
+cycle        372
+On  0, writes      52428   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        373 ----------------------------------------------------
+
+cycle        373
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        374 ----------------------------------------------------
+
+cycle        374
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        375 ----------------------------------------------------
+
+cycle        375
+On  0, writes 4294954189   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        376 ----------------------------------------------------
+
+cycle        376
+Stored      52428 into         68
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        377 ----------------------------------------------------
+
+cycle        377
+Stored      65535 into         72
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        378 ----------------------------------------------------
+
+cycle        378
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        379 ----------------------------------------------------
+
+cycle        379
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        380 ----------------------------------------------------
+
+cycle        380
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        381 ----------------------------------------------------
+
+cycle        381
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        382 ----------------------------------------------------
+
+cycle        382
+On  3, writes         64   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        383 ----------------------------------------------------
+
+cycle        383
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        384 ----------------------------------------------------
+
+cycle        384
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        385 ----------------------------------------------------
+
+cycle        385
+On  0, writes         64   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        386 ----------------------------------------------------
+
+cycle        386
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        387 ----------------------------------------------------
+
+cycle        387
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        388 ----------------------------------------------------
+
+cycle        388
+On  0, writes         12   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        389 ----------------------------------------------------
+
+cycle        389
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        390 ----------------------------------------------------
+
+cycle        390
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        391 ----------------------------------------------------
+
+cycle        391
+Loaded      61166 from         64
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        392 ----------------------------------------------------
+
+cycle        392
+On  7, writes      61166   (wrM)
+Loaded      52428 from         68
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        393 ----------------------------------------------------
+
+cycle        393
+On  6, writes      52428   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        394 ----------------------------------------------------
+
+cycle        394
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        395 ----------------------------------------------------
+
+cycle        395
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        396 ----------------------------------------------------
+
+cycle        396
+On  0, writes      52428   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        397 ----------------------------------------------------
+
+cycle        397
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        398 ----------------------------------------------------
+
+cycle        398
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        399 ----------------------------------------------------
+
+cycle        399
+On  0, writes 4294958558   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        400 ----------------------------------------------------
+
+cycle        400
+Stored      52428 into         64
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        401 ----------------------------------------------------
+
+cycle        401
+Stored      61166 into         68
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        402 ----------------------------------------------------
+
+cycle        402
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        403 ----------------------------------------------------
+
+cycle        403
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        404 ----------------------------------------------------
+
+cycle        404
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        405 ----------------------------------------------------
+
+cycle        405
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        406 ----------------------------------------------------
+
+cycle        406
+On  3, writes         60   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        407 ----------------------------------------------------
+
+cycle        407
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        408 ----------------------------------------------------
+
+cycle        408
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        409 ----------------------------------------------------
+
+cycle        409
+On  0, writes         60   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        410 ----------------------------------------------------
+
+cycle        410
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        411 ----------------------------------------------------
+
+cycle        411
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        412 ----------------------------------------------------
+
+cycle        412
+On  0, writes          8   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        413 ----------------------------------------------------
+
+cycle        413
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        414 ----------------------------------------------------
+
+cycle        414
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        415 ----------------------------------------------------
+
+cycle        415
+Loaded      56797 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        416 ----------------------------------------------------
+
+cycle        416
+On  7, writes      56797   (wrM)
+Loaded      52428 from         64
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        417 ----------------------------------------------------
+
+cycle        417
+On  6, writes      52428   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        418 ----------------------------------------------------
+
+cycle        418
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        419 ----------------------------------------------------
+
+cycle        419
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        420 ----------------------------------------------------
+
+cycle        420
+On  0, writes      52428   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        421 ----------------------------------------------------
+
+cycle        421
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        422 ----------------------------------------------------
+
+cycle        422
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+
+Cycle        423 ----------------------------------------------------
+
+cycle        423
+On  0, writes 4294962927   (wrE)
+Decode : from Pc        282 , expanded inst : 407304000000, 
+rmmovl %7, 00000004(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Stat update
+
+Cycle        424 ----------------------------------------------------
+
+cycle        424
+Stored      52428 into         60
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        425 ----------------------------------------------------
+
+cycle        425
+Stored      56797 into         64
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        426 ----------------------------------------------------
+
+cycle        426
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        427 ----------------------------------------------------
+
+cycle        427
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        428 ----------------------------------------------------
+
+cycle        428
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        429 ----------------------------------------------------
+
+cycle        429
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        430 ----------------------------------------------------
+
+cycle        430
+On  3, writes         56   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        431 ----------------------------------------------------
+
+cycle        431
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        432 ----------------------------------------------------
+
+cycle        432
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        433 ----------------------------------------------------
+
+cycle        433
+On  0, writes         56   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        434 ----------------------------------------------------
+
+cycle        434
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        435 ----------------------------------------------------
+
+cycle        435
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        436 ----------------------------------------------------
+
+cycle        436
+On  0, writes          4   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        437 ----------------------------------------------------
+
+cycle        437
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        438 ----------------------------------------------------
+
+cycle        438
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        439 ----------------------------------------------------
+
+cycle        439
+Loaded      48059 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        440 ----------------------------------------------------
+
+cycle        440
+On  7, writes      48059   (wrM)
+Loaded      52428 from         60
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        441 ----------------------------------------------------
+
+cycle        441
+On  6, writes      52428   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        442 ----------------------------------------------------
+
+cycle        442
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        443 ----------------------------------------------------
+
+cycle        443
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        444 ----------------------------------------------------
+
+cycle        444
+On  0, writes      52428   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        445 ----------------------------------------------------
+
+cycle        445
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        446 ----------------------------------------------------
+
+cycle        446
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        447 ----------------------------------------------------
+
+cycle        447
+On  0, writes       4369   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        448 ----------------------------------------------------
+
+cycle        448
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        449 ----------------------------------------------------
+
+cycle        449
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle        450 ----------------------------------------------------
+
+cycle        450
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        451 ----------------------------------------------------
+
+cycle        451
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        452 ----------------------------------------------------
+
+cycle        452
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        453 ----------------------------------------------------
+
+cycle        453
+On  3, writes         52   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        454 ----------------------------------------------------
+
+cycle        454
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        455 ----------------------------------------------------
+
+cycle        455
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        456 ----------------------------------------------------
+
+cycle        456
+On  0, writes         52   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        457 ----------------------------------------------------
+
+cycle        457
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        458 ----------------------------------------------------
+
+cycle        458
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        459 ----------------------------------------------------
+
+cycle        459
+On  0, writes          0   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        460 ----------------------------------------------------
+
+cycle        460
+Decode : from Pc        255 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        461 ----------------------------------------------------
+
+cycle        461
+Decode : from Pc        261 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        462 ----------------------------------------------------
+
+cycle        462
+Loaded      43690 from         52
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+
+Cycle        463 ----------------------------------------------------
+
+cycle        463
+On  7, writes      43690   (wrM)
+Loaded      48059 from         56
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Stat update
+
+Cycle        464 ----------------------------------------------------
+
+cycle        464
+On  6, writes      48059   (wrM)
+Decode : from Pc        267 , expanded inst : 206061707520, 
+rrmovl %6, %0
+Fetch : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Stat update
+
+Cycle        465 ----------------------------------------------------
+
+cycle        465
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        466 ----------------------------------------------------
+
+cycle        466
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+
+Cycle        467 ----------------------------------------------------
+
+cycle        467
+On  0, writes      48059   (wrE)
+Decode : from Pc        269 , expanded inst : 617075200100, 
+subl %7, %0
+Fetch : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Stat update
+
+Cycle        468 ----------------------------------------------------
+
+cycle        468
+Decode : from Pc        271 , expanded inst : 752001000040, 
+jge $00000120
+Fetch : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+
+Cycle        469 ----------------------------------------------------
+
+cycle        469
+Decode : from Pc        276 , expanded inst : 406300000000, 
+rmmovl %6, 00000000(%3)
+Fetch : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        470 ----------------------------------------------------
+
+cycle        470
+On  0, writes       4369   (wrE)
+Decode : from Pc        288 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        471 ----------------------------------------------------
+
+cycle        471
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Stat update
+
+Cycle        472 ----------------------------------------------------
+
+cycle        472
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+
+Cycle        473 ----------------------------------------------------
+
+cycle        473
+On  0, writes          4   (wrE)
+Decode : from Pc        294 , expanded inst : 610320306110, 
+subl %0, %3
+Fetch : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Stat update
+
+Cycle        474 ----------------------------------------------------
+
+cycle        474
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        475 ----------------------------------------------------
+
+cycle        475
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+
+Cycle        476 ----------------------------------------------------
+
+cycle        476
+On  3, writes         48   (wrE)
+Decode : from Pc        296 , expanded inst : 2030611075ff, 
+rrmovl %3, %0
+Fetch : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Stat update
+
+Cycle        477 ----------------------------------------------------
+
+cycle        477
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        478 ----------------------------------------------------
+
+cycle        478
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+
+Cycle        479 ----------------------------------------------------
+
+cycle        479
+On  0, writes         48   (wrE)
+Decode : from Pc        298 , expanded inst : 611075ff0000, 
+subl %1, %0
+Fetch : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Stat update
+
+Cycle        480 ----------------------------------------------------
+
+cycle        480
+Decode : from Pc        300 , expanded inst : 75ff00000030, 
+jge $000000ff
+Fetch : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        481 ----------------------------------------------------
+
+cycle        481
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+
+Cycle        482 ----------------------------------------------------
+
+cycle        482
+On  0, writes 4294967292   (wrE)
+Decode : from Pc        305 , expanded inst : 30f004000000, 
+irmovl $00000004,  %0
+Fetch : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        483 ----------------------------------------------------
+
+cycle        483
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Stat update
+
+Cycle        484 ----------------------------------------------------
+
+cycle        484
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+
+Cycle        485 ----------------------------------------------------
+
+cycle        485
+On  0, writes          4   (wrE)
+Decode : from Pc        311 , expanded inst : 600250040000, 
+addl %0, %2
+Fetch : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Stat update
+
+Cycle        486 ----------------------------------------------------
+
+cycle        486
+Decode : from Pc        313 , expanded inst : 500400000000, 
+mrmovl 00000000(%4), %0
+Fetch : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        487 ----------------------------------------------------
+
+cycle        487
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+
+Cycle        488 ----------------------------------------------------
+
+cycle        488
+On  2, writes         76   (wrE)
+Loaded         76 from 4294967264
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Stat update
+
+Cycle        489 ----------------------------------------------------
+
+cycle        489
+On  0, writes         76   (wrM)
+Decode : from Pc        319 , expanded inst : 612076f50000, 
+subl %2, %0
+Fetch : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Stat update
+
+Cycle        490 ----------------------------------------------------
+
+cycle        490
+Decode : from Pc        321 , expanded inst : 76f5000000b0, 
+jg $000000f5
+Fetch : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        491 ----------------------------------------------------
+
+cycle        491
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+
+Cycle        492 ----------------------------------------------------
+
+cycle        492
+On  0, writes          0   (wrE)
+Decode : from Pc        326 , expanded inst : b00fb07fb06f, 
+pop %0
+Fetch : from Pc        328 , expanded inst : b07fb06fb03f, 
+pop %7
+Stat update
+
+Cycle        493 ----------------------------------------------------
+
+cycle        493
+Decode : from Pc        328 , expanded inst : b07fb06fb03f, 
+pop %7
+Stat update
+
+Cycle        494 ----------------------------------------------------
+
+cycle        494
+Loaded         76 from 4294967264
+Decode : from Pc        328 , expanded inst : b07fb06fb03f, 
+pop %7
+
+Cycle        495 ----------------------------------------------------
+
+cycle        495
+On  4, writes 4294967268   (wrE)
+On  0, writes         76   (wrM)
+Decode : from Pc        328 , expanded inst : b07fb06fb03f, 
+pop %7
+Fetch : from Pc        330 , expanded inst : b06fb03f2054, 
+pop %6
+Stat update
+
+Cycle        496 ----------------------------------------------------
+
+cycle        496
+Decode : from Pc        330 , expanded inst : b06fb03f2054, 
+pop %6
+
+Cycle        497 ----------------------------------------------------
+
+cycle        497
+Loaded          0 from 4294967268
+Decode : from Pc        330 , expanded inst : b06fb03f2054, 
+pop %6
+
+Cycle        498 ----------------------------------------------------
+
+cycle        498
+On  4, writes 4294967272   (wrE)
+On  7, writes          0   (wrM)
+Decode : from Pc        330 , expanded inst : b06fb03f2054, 
+pop %6
+Fetch : from Pc        332 , expanded inst : b03f2054b05f, 
+pop %3
+Stat update
+
+Cycle        499 ----------------------------------------------------
+
+cycle        499
+Decode : from Pc        332 , expanded inst : b03f2054b05f, 
+pop %3
+
+Cycle        500 ----------------------------------------------------
+
+cycle        500
+Loaded          0 from 4294967272
+Decode : from Pc        332 , expanded inst : b03f2054b05f, 
+pop %3
+
+Cycle        501 ----------------------------------------------------
+
+cycle        501
+On  4, writes 4294967276   (wrE)
+On  6, writes          0   (wrM)
+Decode : from Pc        332 , expanded inst : b03f2054b05f, 
+pop %3
+Fetch : from Pc        334 , expanded inst : 2054b05f9000, 
+rrmovl %5, %4
+Stat update
+
+Cycle        502 ----------------------------------------------------
+
+cycle        502
+Decode : from Pc        334 , expanded inst : 2054b05f9000, 
+rrmovl %5, %4
+
+Cycle        503 ----------------------------------------------------
+
+cycle        503
+Loaded        768 from 4294967276
+Decode : from Pc        334 , expanded inst : 2054b05f9000, 
+rrmovl %5, %4
+
+Cycle        504 ----------------------------------------------------
+
+cycle        504
+On  4, writes 4294967280   (wrE)
+On  3, writes        768   (wrM)
+Decode : from Pc        334 , expanded inst : 2054b05f9000, 
+rrmovl %5, %4
+Fetch : from Pc        336 , expanded inst : b05f9000aaaa, 
+pop %5
+Stat update
+
+Cycle        505 ----------------------------------------------------
+
+cycle        505
+Decode : from Pc        336 , expanded inst : b05f9000aaaa, 
+pop %5
+
+Cycle        506 ----------------------------------------------------
+
+cycle        506
+Decode : from Pc        336 , expanded inst : b05f9000aaaa, 
+pop %5
+
+Cycle        507 ----------------------------------------------------
+
+cycle        507
+On  4, writes 4294967280   (wrE)
+Decode : from Pc        336 , expanded inst : b05f9000aaaa, 
+pop %5
+Fetch : from Pc        338 , expanded inst : 9000aaaaaaaa, 
+ret
+Stat update
+
+Cycle        508 ----------------------------------------------------
+
+cycle        508
+Decode : from Pc        338 , expanded inst : 9000aaaaaaaa, 
+ret
+
+Cycle        509 ----------------------------------------------------
+
+cycle        509
+Loaded        768 from 4294967280
+Decode : from Pc        338 , expanded inst : 9000aaaaaaaa, 
+ret
+
+Cycle        510 ----------------------------------------------------
+
+cycle        510
+On  4, writes 4294967284   (wrE)
+On  5, writes        768   (wrM)
+Decode : from Pc        338 , expanded inst : 9000aaaaaaaa, 
+ret
+Fetch : from Pc        339 , expanded inst : 00aaaaaaaaaa, 
+halt
+Stat update
+
+Cycle        511 ----------------------------------------------------
+
+cycle        511
+Decode : from Pc        339 , expanded inst : 00aaaaaaaaaa, 
+halt
+Fetch : from Pc        339 , expanded inst : 00aaaaaaaaaa, 
+halt
+
+Cycle        512 ----------------------------------------------------
+
+cycle        512
+Loaded        121 from 4294967284
+Decode : from Pc        339 , expanded inst : 00aaaaaaaaaa, 
+halt
+Fetch : from Pc        121 , expanded inst : 30f334000000, 
+irmovl $00000034,  %3
+
+Cycle        513 ----------------------------------------------------
+
+cycle        513
+On  4, writes 4294967288   (wrE)
+Decode : from Pc        121 , expanded inst : 30f334000000, 
+irmovl $00000034,  %3
+Fetch : from Pc        127 , expanded inst : 30f001000000, 
+irmovl $00000001,  %0
+Stat update
+
+Cycle        514 ----------------------------------------------------
+
+cycle        514
+Decode : from Pc        127 , expanded inst : 30f001000000, 
+irmovl $00000001,  %0
+Fetch : from Pc        133 , expanded inst : 30f104000000, 
+irmovl $00000004,  %1
+
+Cycle        515 ----------------------------------------------------
+
+cycle        515
+Decode : from Pc        133 , expanded inst : 30f104000000, 
+irmovl $00000004,  %1
+Fetch : from Pc        139 , expanded inst : 30f205000000, 
+irmovl $00000005,  %2
+
+Cycle        516 ----------------------------------------------------
+
+cycle        516
+On  3, writes         52   (wrE)
+Decode : from Pc        139 , expanded inst : 30f205000000, 
+irmovl $00000005,  %2
+Fetch : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        517 ----------------------------------------------------
+
+cycle        517
+On  0, writes          1   (wrE)
+Decode : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        518 ----------------------------------------------------
+
+cycle        518
+On  1, writes          4   (wrE)
+Decode : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        519 ----------------------------------------------------
+
+cycle        519
+On  2, writes          5   (wrE)
+Loaded      43690 from         52
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        520 ----------------------------------------------------
+
+cycle        520
+On  7, writes      43690   (wrM)
+Loaded      48059 from         56
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        521 ----------------------------------------------------
+
+cycle        521
+On  6, writes      48059   (wrM)
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Fetch : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Stat update
+
+Cycle        522 ----------------------------------------------------
+
+cycle        522
+Decode : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Fetch : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+
+Cycle        523 ----------------------------------------------------
+
+cycle        523
+Decode : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+Fetch : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+
+Cycle        524 ----------------------------------------------------
+
+cycle        524
+On  7, writes 4294962927   (wrE)
+Decode : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+Fetch : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Stat update
+
+Cycle        525 ----------------------------------------------------
+
+cycle        525
+Decode : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Fetch : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Stat update
+
+Cycle        526 ----------------------------------------------------
+
+cycle        526
+On  3, writes         56   (wrE)
+Decode : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Fetch : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        527 ----------------------------------------------------
+
+cycle        527
+On  2, writes          4   (wrE)
+Decode : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        528 ----------------------------------------------------
+
+cycle        528
+Decode : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        529 ----------------------------------------------------
+
+cycle        529
+Loaded      48059 from         56
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+
+Cycle        530 ----------------------------------------------------
+
+cycle        530
+On  7, writes      48059   (wrM)
+Loaded      52428 from         60
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        531 ----------------------------------------------------
+
+cycle        531
+On  6, writes      52428   (wrM)
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Fetch : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Stat update
+
+Cycle        532 ----------------------------------------------------
+
+cycle        532
+Decode : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Fetch : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+
+Cycle        533 ----------------------------------------------------
+
+cycle        533
+Decode : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+Fetch : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+
+Cycle        534 ----------------------------------------------------
+
+cycle        534
+On  7, writes 4294962927   (wrE)
+Decode : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+Fetch : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Stat update
+
+Cycle        535 ----------------------------------------------------
+
+cycle        535
+Decode : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Fetch : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Stat update
+
+Cycle        536 ----------------------------------------------------
+
+cycle        536
+On  3, writes         60   (wrE)
+Decode : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Fetch : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        537 ----------------------------------------------------
+
+cycle        537
+On  2, writes          3   (wrE)
+Decode : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        538 ----------------------------------------------------
+
+cycle        538
+Decode : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        539 ----------------------------------------------------
+
+cycle        539
+Loaded      52428 from         60
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+
+Cycle        540 ----------------------------------------------------
+
+cycle        540
+On  7, writes      52428   (wrM)
+Loaded      56797 from         64
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        541 ----------------------------------------------------
+
+cycle        541
+On  6, writes      56797   (wrM)
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Fetch : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Stat update
+
+Cycle        542 ----------------------------------------------------
+
+cycle        542
+Decode : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Fetch : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+
+Cycle        543 ----------------------------------------------------
+
+cycle        543
+Decode : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+Fetch : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+
+Cycle        544 ----------------------------------------------------
+
+cycle        544
+On  7, writes 4294962927   (wrE)
+Decode : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+Fetch : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Stat update
+
+Cycle        545 ----------------------------------------------------
+
+cycle        545
+Decode : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Fetch : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Stat update
+
+Cycle        546 ----------------------------------------------------
+
+cycle        546
+On  3, writes         64   (wrE)
+Decode : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Fetch : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        547 ----------------------------------------------------
+
+cycle        547
+On  2, writes          2   (wrE)
+Decode : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        548 ----------------------------------------------------
+
+cycle        548
+Decode : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        549 ----------------------------------------------------
+
+cycle        549
+Loaded      56797 from         64
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+
+Cycle        550 ----------------------------------------------------
+
+cycle        550
+On  7, writes      56797   (wrM)
+Loaded      61166 from         68
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        551 ----------------------------------------------------
+
+cycle        551
+On  6, writes      61166   (wrM)
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Fetch : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Stat update
+
+Cycle        552 ----------------------------------------------------
+
+cycle        552
+Decode : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Fetch : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+
+Cycle        553 ----------------------------------------------------
+
+cycle        553
+Decode : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+Fetch : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+
+Cycle        554 ----------------------------------------------------
+
+cycle        554
+On  7, writes 4294962927   (wrE)
+Decode : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+Fetch : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Stat update
+
+Cycle        555 ----------------------------------------------------
+
+cycle        555
+Decode : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Fetch : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Stat update
+
+Cycle        556 ----------------------------------------------------
+
+cycle        556
+On  3, writes         68   (wrE)
+Decode : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Fetch : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Stat update
+
+Cycle        557 ----------------------------------------------------
+
+cycle        557
+On  2, writes          1   (wrE)
+Decode : from Pc        145 , expanded inst : 507300000000, 
+mrmovl 00000000(%3), %7
+Fetch : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Stat update
+
+Cycle        558 ----------------------------------------------------
+
+cycle        558
+Decode : from Pc        151 , expanded inst : 506304000000, 
+mrmovl 00000004(%3), %6
+Fetch : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        559 ----------------------------------------------------
+
+cycle        559
+Loaded      61166 from         68
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+
+Cycle        560 ----------------------------------------------------
+
+cycle        560
+On  7, writes      61166   (wrM)
+Loaded      65535 from         72
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Stat update
+
+Cycle        561 ----------------------------------------------------
+
+cycle        561
+On  6, writes      65535   (wrM)
+Decode : from Pc        157 , expanded inst : 616776b30000, 
+subl %6, %7
+Fetch : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Stat update
+
+Cycle        562 ----------------------------------------------------
+
+cycle        562
+Decode : from Pc        159 , expanded inst : 76b300000060, 
+jg $000000b3
+Fetch : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+
+Cycle        563 ----------------------------------------------------
+
+cycle        563
+Decode : from Pc        164 , expanded inst : 601361027691, 
+addl %1, %3
+Fetch : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+
+Cycle        564 ----------------------------------------------------
+
+cycle        564
+On  7, writes 4294962927   (wrE)
+Decode : from Pc        166 , expanded inst : 610276910000, 
+subl %0, %2
+Fetch : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Stat update
+
+Cycle        565 ----------------------------------------------------
+
+cycle        565
+Decode : from Pc        168 , expanded inst : 769100000030, 
+jg $00000091
+Fetch : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Stat update
+
+Cycle        566 ----------------------------------------------------
+
+cycle        566
+On  3, writes         72   (wrE)
+Decode : from Pc        173 , expanded inst : 30f000000000, 
+irmovl $00000000,  %0
+Fetch : from Pc        179 , expanded inst : c00e000000aa, 
+mtc0 %0, %e
+Stat update
+
+Cycle        567 ----------------------------------------------------
+
+cycle        567
+On  2, writes          0   (wrE)
+Decode : from Pc        179 , expanded inst : c00e000000aa, 
+mtc0 %0, %e
+Stat update
+
+Cycle        568 ----------------------------------------------------
+
+cycle        568
+Decode : from Pc        179 , expanded inst : c00e000000aa, 
+mtc0 %0, %e
+Stat update
+
+Cycle        569 ----------------------------------------------------
+
+cycle        569
+On  0, writes          0   (wrE)
+Decode : from Pc        179 , expanded inst : c00e000000aa, 
+mtc0 %0, %e
+Fetch : from Pc        181 , expanded inst : 000000aaaaaa, 
+halt
+Stat update
+
+Cycle        570 ----------------------------------------------------
+
+cycle        570
+Decode : from Pc        181 , expanded inst : 000000aaaaaa, 
+halt
+Fetch : from Pc        182 , expanded inst : 0000aaaaaaaa, 
+halt
+
+Cycle        571 ----------------------------------------------------
+
+cycle        571
+Decode : from Pc        182 , expanded inst : 0000aaaaaaaa, 
+halt
+Fetch : from Pc        183 , expanded inst : 00aaaaaaaaaa, 
+halt
+
+Cycle        572 ----------------------------------------------------
+
+cycle        572
+On 14, writes          0   (wrE)
+Decode : from Pc        183 , expanded inst : 00aaaaaaaaaa, 
+halt
+Fetch : from Pc        184 , expanded inst : aaaaaaaaaaaa, 
+push %a
+Stat update
+
+Cycle        573 ----------------------------------------------------

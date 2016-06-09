@@ -1,0 +1,125 @@
+Warning: file 'memory.vmh' for memory 'dMem' has a gap at addresses 14 to 67108863.
+Warning: file 'memory.vmh' for memory 'iMem' has a gap at addresses 14 to 67108863.
+
+Cycle          0 ----------------------------------------------------
+
+cycle          0
+Fetch : from Pc          0 , expanded inst : 30f440000000, 
+irmovl $00000040,  %4
+
+Cycle          1 ----------------------------------------------------
+
+cycle          1
+Decode : from Pc          0 , expanded inst : 30f440000000, 
+irmovl $00000040,  %4
+Fetch : from Pc          6 , expanded inst : 30f024000000, 
+irmovl $00000024,  %0
+
+Cycle          2 ----------------------------------------------------
+
+cycle          2
+Decode : from Pc          6 , expanded inst : 30f024000000, 
+irmovl $00000024,  %0
+Fetch : from Pc         12 , expanded inst : a00f6300741c, 
+push %0
+
+Cycle          3 ----------------------------------------------------
+
+cycle          3
+Decode : from Pc         12 , expanded inst : a00f6300741c, 
+push %0
+Fetch : from Pc         14 , expanded inst : 6300741c0000, 
+xorl %0, %0
+
+Cycle          4 ----------------------------------------------------
+
+cycle          4
+On  4, writes         64   (wrE)
+Decode : from Pc         14 , expanded inst : 6300741c0000, 
+xorl %0, %0
+Fetch : from Pc         16 , expanded inst : 741c00000030, 
+jne $0000001c
+Stat update
+
+Cycle          5 ----------------------------------------------------
+
+cycle          5
+On  0, writes         36   (wrE)
+Stored         36 into         60
+Decode : from Pc         16 , expanded inst : 741c00000030, 
+jne $0000001c
+Fetch : from Pc         21 , expanded inst : 30f001000000, 
+irmovl $00000001,  %0
+Stat update
+
+Cycle          6 ----------------------------------------------------
+
+cycle          6
+On  4, writes         60   (wrE)
+Decode : from Pc         21 , expanded inst : 30f001000000, 
+irmovl $00000001,  %0
+Fetch : from Pc         27 , expanded inst : 30f601000000, 
+irmovl $00000001,  %6
+Stat update
+
+Cycle          7 ----------------------------------------------------
+
+cycle          7
+On  0, writes          0   (wrE)
+Decode : from Pc         27 , expanded inst : 30f601000000, 
+irmovl $00000001,  %6
+Fetch : from Pc         33 , expanded inst : 6160c00e0090, 
+subl %6, %0
+Stat update
+
+Cycle          8 ----------------------------------------------------
+
+cycle          8
+Decode : from Pc         33 , expanded inst : 6160c00e0090, 
+subl %6, %0
+Fetch : from Pc         35 , expanded inst : c00e009030f3, 
+mtc0 %0, %e
+Stat update
+
+Cycle          9 ----------------------------------------------------
+
+cycle          9
+On  0, writes          1   (wrE)
+Decode : from Pc         35 , expanded inst : c00e009030f3, 
+mtc0 %0, %e
+Fetch : from Pc         37 , expanded inst : 009030f30200, 
+halt
+Stat update
+
+Cycle         10 ----------------------------------------------------
+
+cycle         10
+On  6, writes          1   (wrE)
+Decode : from Pc         37 , expanded inst : 009030f30200, 
+halt
+Fetch : from Pc         38 , expanded inst : 9030f3020000, 
+ret
+Stat update
+
+Cycle         11 ----------------------------------------------------
+
+cycle         11
+On  0, writes          0   (wrE)
+Decode : from Pc         38 , expanded inst : 9030f3020000, 
+ret
+Fetch : from Pc         39 , expanded inst : 30f302000000, 
+irmovl $00000002,  %3
+Stat update
+
+Cycle         12 ----------------------------------------------------
+
+cycle         12
+On 14, writes          0   (wrE)
+mispredicted, redirect         39 
+Decode : from Pc         39 , expanded inst : 30f302000000, 
+irmovl $00000002,  %3
+Fetch : from Pc         39 , expanded inst : 30f302000000, 
+irmovl $00000002,  %3
+Stat update
+
+Cycle         13 ----------------------------------------------------
